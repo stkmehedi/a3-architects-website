@@ -1,10 +1,19 @@
 /* work span fonts from goole */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+/* shared stylist */
 *{
     font-family: 'Work Sans', sans-serif;
-}
-   /* header style    */
+    }
+
+    .btn-primary{
+        border-radius: 8px;
+        background: #FF900E;
+        color: #fff;
+        padding: 20px 25px;
+        margin: 0;
+        cursor: pointer;
+    }
+   /* header nav style start   */
 header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 250px;
@@ -35,4 +44,53 @@ nav li{
 nav li a{
     text-decoration: none;
     color: #424242;
+}
+/* header nav style end */
+
+/* header banner-container start */
+
+.banner-container{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+
+}
+
+.banner-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.banner img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* header banner-container end */
+
+/* header resonsive */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:567px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
