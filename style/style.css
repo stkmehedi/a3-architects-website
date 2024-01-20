@@ -5,6 +5,10 @@
     font-family: 'Work Sans', sans-serif;
     }
 
+    .banner-description, {
+        color: #727272;
+    }
+
     .btn-primary{
         border-radius: 8px;
         background: #FF900E;
@@ -77,20 +81,76 @@ nav li a{
 /* header banner-container end */
 
 /* header resonsive */
+
+
+/* main style */
+main{
+    max-width: 1400px;
+    margin: auto;
+}
+/* teem style */
+.teem-container{
+    display: flex;
+    align-items: center;
+}
+.teem-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.teem-content .of-our{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.teem-content .quick-list{
+    font-size: 45px;
+    font-weight: 500;
+    color: #727272;
+
+}
+.teem-content .features{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.teem-content{
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+/* mobile scrin responsive */
 @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav {
+    nav,
+    .teem-container{
         flex-direction: column;
     }
+    .teem-container{
+        flex-direction: column;
+    }
+    
+    .teem-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teem-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-
+/* midium scrin responsive */
 @media screen and (min-width:567px) and (max-width:960px) {
     header{
         padding: 50px;
     }
-    nav {
+    nav,
+    .teem-container {
         flex-direction: column;
+    }
+    .teem-content {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
